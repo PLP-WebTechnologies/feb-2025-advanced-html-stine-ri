@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced HTML5 Elements and Forms">
+    <title>Advanced HTML5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #26000c;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.8rem;
+        }
+        nav {
+            background: #26000c;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #ffdd57;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #26000c;
+            border-bottom: 2px solid #26000c;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #26000c;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #26000c;
+            color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, select, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #26000c;
+            color: white;
+            cursor: pointer;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+    <nav>
+        <a href="#list">List</a>
+        <a href="#image">Image</a>
+        <a href="#table">Contacts</a>
+        <a href="#form">Registration</a>
+    </nav>
+    <main>
+        <section id="list">
+            <h2>Ordered List (Roman Numerals)</h2>
+            <ol type="I">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ol>
+        </section>
+        <section id="image">
+            <h2>External Image</h2>
+            <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Pexels Image" width="100%">
+        </section>
+        <section id="table">
+            <h2>Contact Table</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Main St</td>
+                    <td>+123456789</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Elm St</td>
+                    <td>+987654321</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mike Brown</td>
+                    <td>789 Oak St</td>
+                    <td>+112233445</td>
+                    <td>mike@example.com</td>
+                </tr>
+            </table>
+        </section>
+        <section id="form">
+            <h2>Registration Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a password" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="canada">Canada</option>
+                </select>
+                
+                <label>
+                    <input type="checkbox" name="terms" required> I agree to the terms and conditions
+                </label>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us at: <a href="mailto:info@example.com">info@example.com</a></p>
+    </footer>
+</body>
+</html>
